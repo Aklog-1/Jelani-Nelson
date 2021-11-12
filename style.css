@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+    min-width: 940px;
+}
+
+header {
+    /*added late*/
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+
+    box-shadow: 3px 3px rgba(156, 103, 103, 0.2);
+    border-bottom-left-radius: 5px;
+}
+
+header #logo {
+    font-size: 2rem;
+    color: rgb(200, 10, 200);
+    padding-left: 40px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 40%;
+    font-size: 1.3rem;
+}
+header ul li {
+    margin: 0 10px;
+}
+header ul li a {
+    color: purple;
+}
+header ul li a:hover {
+    color: rgb(200, 10, 200);
+}
+
+
+/* added late */
+#about {
+    margin-top: 100px;
+}
+/* content start... */
+
+div.content {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* left start  */
+.left {
+    text-align: center;
+    margin-top: 150px;
+    margin-left:40px;
+}
+.left img {
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.left img:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.5s;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left h1{
+    color: rgb(14, 85, 85);
+    margin-top: 10px;
+}
+.left span {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+/* left end  */
+
+
+
+
+
+/* right start */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+body {
+    background-color: #f9f9f9;
+}
+.right .details {
+    line-height: 25px;
+    margin: 25px 0;
+    width: 50%;
+    /* box-shadow: 1px 1px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 3px 2px white;
+
+    padding: 20px;
+    text-align: justify;
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.right h2 {
+    background-color:teal;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    width: auto;
+    text-align:start;
+}
+
+.right .details:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.1),
+    -3px -3px 3px 0px white;
+}
+
+
+
+.right li {
+    list-style: none;
+}
+
+/* right end */
